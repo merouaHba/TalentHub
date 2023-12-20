@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Rubik', sans-serif;
+
+}
+
+
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+.alert {
+  font-feature-settings: 'clig' off, 'liga' off;
+font-family: 'Public Sans', sans-serif;
+}
