@@ -6,8 +6,7 @@ function registerForm()
 		
 		$username = htmlspecialchars($_POST["user"]);
 		$email = htmlspecialchars($_POST["email"]);
-		$password = htmlspecialchars($_POST["pass"]);
-		$confirmedPassword = htmlspecialchars($_POST["passc"]);
+		$password = hash(htmlspecialchars($_POST["pass"]), PASSWORD_DEFAULT);
 
 		if(empty(trim($username)) || strlen($username) == 0 || empty(trim($password)) || strlen($password) == 0){
 			header("Location: ./index.php");

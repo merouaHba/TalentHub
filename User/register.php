@@ -14,7 +14,6 @@
         Username : <input type="text" name="user">
         Email : <input type="email" name="email">
         Password <input type="password" name="pass">
-        Password Confirmation: <input type="password" name="passc">
         <input type="submit" value="submit" name="submit">
     </form>
 </body>
