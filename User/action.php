@@ -1,4 +1,5 @@
 <?php
+
 function registerForm()
 {
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -15,9 +16,25 @@ function registerForm()
 
 		else
 		{
-			var_dump($_POST);
+			header("Location: ./login.php");
 		}
 
+	}
+}
+
+function loginForm()
+{
+	if($_SERVER["REQUEST_METHOD"] == "POST"){
+		$email = htmlspecialchars($_POST["email"]);
+		$password = htmlspecialchars($_POST["pass"]);
+		if(empty(trim($email)) || strlen($email) == 0 || empty(trim($password)) || strlen($password) == 0 || $password == null || $email == null){
+			header("Location: ./login.php");
+			exit();
+		}
+		else {
+			header("Location: ./dashboard.php");
+
+		}
 	}
 }
 ?>
